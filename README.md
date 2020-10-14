@@ -19,9 +19,9 @@ IMPORTANT: You need to have the latest version of Pegasus installed (not the cur
 
 ## Navigation
 
-Show collections menu: Filters button
-Cycle active collection: Previous/Next Page buttons
-Favorite toggle: Details button
+Update reamd- Show collections menu: Filters button
+- Cycle active collection: Previous/Next Page buttons
+- Favorite toggle: Details button
 
 ## Metadata
 
