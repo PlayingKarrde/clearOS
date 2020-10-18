@@ -135,15 +135,16 @@ id: root
         }
         NavigationButton {
             selected: PathView.isCurrentItem
-            icon: "assets/images/navigation/Settings.png"
-            label: "Settings"
+            icon: "assets/images/navigation/DarkMode.png"
+            label: "Toggle Dark Mode"
             showLabel: selected && root.focus
             anchors { bottom: parent.bottom; bottomMargin: vpx(25)}
             width: vpx(46)
             onActivated: {
                 setIndex(ObjectModel.index);
                 closeCollectionsMenu();
-                mainMenu.focus = true;
+                darkMode = !darkMode;
+                //mainMenu.focus = true;
             }
         }
     }

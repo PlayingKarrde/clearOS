@@ -135,6 +135,7 @@ id: root
                     top: parent.top; topMargin: vpx(90)
                     left: parent.left;
                 }
+                color: theme.text
                 opacity: 0.7
             }
 
@@ -144,6 +145,7 @@ id: root
                 text: gameData.title
                 font.pixelSize: vpx(40)
                 font.family: titleFont.name
+                color: theme.text
                 anchors {
                     top: collectionName.bottom; topMargin: vpx(-10)
                     left: parent.left;

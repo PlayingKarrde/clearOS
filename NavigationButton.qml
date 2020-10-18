@@ -76,6 +76,7 @@ id: root
         }
         radius: height/2
         visible: showLabel
+        color: theme.main
         
         Text {
         id: label

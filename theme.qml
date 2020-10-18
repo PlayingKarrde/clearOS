@@ -32,15 +32,29 @@ FocusScope {
             currentGame.launch();
     }
 
+    property bool darkMode: api.memory.has('Dark Mode') ? api.memory.get('Dark Mode') : false
+    onDarkModeChanged: api.memory.set('Dark Mode', darkMode)
+
     // Theme settings
     property var theme: {
-        return {
-            main:       "#ffffff",
-            secondary:  "#202a44",
-            accent:     "#f00980",
-            highlight:  "#f00980",
-            text:       "#212121",
-            button:     "#f00980"
+        if (darkMode) {
+            return {
+                main:       "#1c1c1c",
+                secondary:  "#202a44",
+                accent:     "#f00980",
+                highlight:  "#f00980",
+                text:       "#ffffff",
+                button:     "#f00980"
+            }
+        } else {
+            return {
+                main:       "#ffffff",
+                secondary:  "#202a44",
+                accent:     "#f00980",
+                highlight:  "#f00980",
+                text:       "#212121",
+                button:     "#f00980"
+            }
         }
     }
 
@@ -198,7 +212,7 @@ FocusScope {
             source: "assets/images/131.jpg"
             sourceSize { width: 1280; height: 720 }
             anchors.fill: parent
-            opacity: 0.4
+            opacity: darkMode ? 0.1 : 0.4
         }
     }
 
