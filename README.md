@@ -1,4 +1,4 @@
-# clearOS v1.0
+# clearOS v1.1
 
 ![clearOS Pegasus theme](https://i.imgur.com/XUvZIjx.png)
 ![clearOS Pegasus theme](https://i.imgur.com/FP0eJIY.png)
