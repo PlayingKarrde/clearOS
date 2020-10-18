@@ -40,18 +40,18 @@ FocusScope {
         if (darkMode) {
             return {
                 main:       "#1c1c1c",
-                secondary:  "#202a44",
+                secondary:  "#e6e6e6",
                 accent:     "#f00980",
-                highlight:  "#f00980",
+                highlight:  "black",
                 text:       "#ffffff",
                 button:     "#f00980"
             }
         } else {
             return {
                 main:       "#ffffff",
-                secondary:  "#202a44",
+                secondary:  "#84878a",
                 accent:     "#f00980",
-                highlight:  "#f00980",
+                highlight:  "white",
                 text:       "#212121",
                 button:     "#f00980"
             }

@@ -161,8 +161,8 @@ id: root
                 anchors { top: gameName.bottom; topMargin: vpx(5)}
                 gradient: Gradient {
                     orientation: Gradient.Horizontal
-                    GradientStop { position: 0.0; color: featuredRecentGame.selected ? "#f34225" : "#84878a" }
-                    GradientStop { position: 1.0; color: featuredRecentGame.selected ? "#bb2960" : "#84878a" }
+                    GradientStop { position: 0.0; color: featuredRecentGame.selected ? "#f34225" : theme.secondary }
+                    GradientStop { position: 1.0; color: featuredRecentGame.selected ? "#bb2960" : theme.secondary }
                 }
 
                 // Mouse/touch functionality

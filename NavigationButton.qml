@@ -43,7 +43,7 @@ id: root
         anchors.fill: selectionBorder
         radius: width/2
         anchors.margins: vpx(2)
-        border.color: "white"
+        color: theme.main
         visible: !showLabel && selected
     }
     
@@ -62,7 +62,7 @@ id: root
     ColorOverlay {
         anchors.fill: systemImage
         source: systemImage
-        color: (selected && showLabel) || (highlighted && !selected) ? "white" : "#84878a"
+        color: (selected && showLabel) || (highlighted && !selected) ? "white" : theme.secondary
     }
 
     Rectangle {

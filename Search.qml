@@ -36,7 +36,7 @@ id: root
                 bottom: parent.bottom;
                 margins: vpx(70)
             }
-            color: "white"
+            color: theme.main
             radius: height/2
             border.width: vpx(2)
             border.color: "#d9d9d9"
