@@ -10,7 +10,7 @@ id: collectionList
         
         anchors.fill: parent
         
-        color: "white"
+        color: theme.main
 
         // Build the collections list but with "All Games" as starting element
         ListModel {

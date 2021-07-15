@@ -203,7 +203,7 @@ id: root
                     font.pixelSize: vpx(18)
                     font.family: bodyFont.name
                     font.bold: true
-                    color: "white"
+                    color: featuredRecentGame.selected ? "white" : theme.main
                     anchors {
                         left: playIcon.right; leftMargin: vpx(10)
                         top: parent.top
