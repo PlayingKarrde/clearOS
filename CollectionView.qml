@@ -194,6 +194,13 @@ id: root
                     fillMode: Image.PreserveAspectFit
                     sourceSize: Qt.size(playIcon.width, playIcon.height)
                     source: "assets/images/navigation/Play.png"
+                    visible: false
+                }
+
+                ColorOverlay {
+                    anchors.fill: playIcon
+                    source: playIcon
+                    color: darkMode && !featuredRecentGame.selected ? theme.main : "white"
                 }
 
                 Text {
@@ -203,7 +210,7 @@ id: root
                     font.pixelSize: vpx(18)
                     font.family: bodyFont.name
                     font.bold: true
-                    color: "white"
+                    color: darkMode && !featuredRecentGame.selected ? theme.main : "white"
                     anchors {
                         left: playIcon.right; leftMargin: vpx(10)
                         top: parent.top
